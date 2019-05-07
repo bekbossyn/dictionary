@@ -11,7 +11,7 @@ celerybeat.pid
 # C extensions
 *.so
 static2/
-.idea/
+.idea/*
 db.sqlite3
 generated/
 
