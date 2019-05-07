@@ -11,7 +11,7 @@ DATABASES = {
     }
 }
 
-STATIC_URL = '/root/dev/static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = '/root/dev/static/'
 MEDIA_ROOT = '/root/dev/media/'
 
