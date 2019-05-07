@@ -144,7 +144,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "../static"),
 ]
 
 SITE_URL = 'http://localhost:8000'
@@ -153,7 +153,7 @@ AUTH_TOKEN_HEADER_NAME = ["AUTH_TOKEN", "HTTP_AUTH_TOKEN", "Auth-Token"]
 AUTH_TOKEN_COOKIE_NAME = "auth-token"
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_ROOT = os.path.join(BASE_DIR, "../media")
 
 # CUSTOM AUTH SETTINGS
 AUTH_USER_MODEL = "user.MainUser"
