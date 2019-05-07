@@ -1,7 +1,6 @@
 certifi==2019.3.9
 chardet==3.0.4
 Django==2.2.1
-GDAL==2.4.1
 gis==0.2.1
 idna==2.8
 Pillow==6.0.0
