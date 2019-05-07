@@ -1,0 +1,16 @@
+RUSSIAN = 1
+KAZAKH = 2
+ENGLISH = 3
+
+RUSSIAN_NAME = u'русский'
+KAZAKH_NAME = u'қазақша'
+ENGLISH_NAME = u'english'
+
+LANGUAGES = (
+    (RUSSIAN, RUSSIAN_NAME),
+    (KAZAKH, KAZAKH_NAME),
+    (ENGLISH, ENGLISH_NAME),
+)
+
+HIDE_LAST = 4
+
