@@ -33,7 +33,7 @@ def update():
     """
     Restarts the server
     """
-    run("cd /home/development/dictionary/ && . ./run.sh")
+    run("cd dictionary/ && . ./run.sh")
     sudo("systemctl restart gunicorn")
     sudo("systemctl restart nginx")
     update_supervisor()
