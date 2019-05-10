@@ -7,7 +7,7 @@ env.repository = "https://github.com/bekbossyn/dictionary.git"
 env.repo_name = "dictionary"
 env.hosts = ["188.166.13.81"]
 env.user = "development"
-env.password = "Truesight7"
+# env.password = "Truesight7"
 
 
 # @task
