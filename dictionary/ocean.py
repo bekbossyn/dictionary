@@ -15,4 +15,4 @@ STATIC_URL = '/static/'
 STATIC_ROOT = '/home/development/static/'
 MEDIA_ROOT = '/home/development/media/'
 
-SITE_URL = 'http://159.65.140.145'
+SITE_URL = 'http://188.166.13.81'
