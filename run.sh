@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd ../env_dictionary/bin && source 'activate'
+source '../env_dictionary/bin/activate'
 cd  /home/development/dictionary/ && pip install -r requirements.txt
 python ocean.py collectstatic --noinput
 python ocean.py migrate --noinput
