@@ -7,7 +7,7 @@ def git_pull():
     """
     Updates the repository
     """
-    run("cd /root/dev/belka && git pull origin master")
+    run("cd /home/development/dictionary && git pull origin master")
 
 
 # @task
