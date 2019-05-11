@@ -35,7 +35,7 @@ def update():
     """
     run("cd /home/development/dictionary/ && . ./run.sh")
     run("source /home/development/env_dictionary/bin/activate")
-    run("cd /home/development/dictionary/")
+    run("cd /home/development/dictionary/ && . python ocean.py migrate --noinput")
     run("pwd")
     run("python ocean.py migrate --noinput")
     sudo("systemctl restart gunicorn")
