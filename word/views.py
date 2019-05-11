@@ -15,7 +15,6 @@ def test_show_word(request):
     try:
         word = Word.objects.last()
     except ObjectDoesNotExist:
-        word = None
         return http.code_response(
             code=result_codes.BAD_REQUEST,
             message=messages.NOT_FOUND)

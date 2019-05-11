@@ -1,10 +1,13 @@
+from django.contrib.postgres.fields import JSONField
 from django.db import models
+
 from utilities.time_utilities import dt_to_timestamp
 
 
 # Create your models here.
 class Word(models.Model):
     word = models.CharField(max_length=200, blank=True, null=True)
+    data = JSONField(default={}, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -14,6 +17,7 @@ class Word(models.Model):
         return {
             "id": self.pk,
             "word": self.word,
+            "data": self.data,
             "timestamp": dt_to_timestamp(self.timestamp),
         }
 
