@@ -35,9 +35,10 @@ def update():
     """
     run("pwd")
     # run("cd /home/development/dictionary/ && . ./run.sh")
-    run("pwd")
     run("source /home/development/env_dictionary/bin/activate")
-    run("cd /home/development/dictionary && pip install -r requirements")
+    run("which python")
+    run("cd /home/development/dictionary && pip install -r requirements.txt")
+    run("pwd")
     run("python ocean.py collectstatic --noinput")
     run("python ocean.py migrate --noinput")
     run("which python")
