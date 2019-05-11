@@ -6,7 +6,7 @@ from fabric.decorators import task
 env.repository = "https://github.com/bekbossyn/dictionary.git"
 env.repo_name = "dictionary"
 env.hosts = ["188.166.13.81"]
-env.user = "root"
+env.user = "development"
 env.password = "Truesight7"
 
 
