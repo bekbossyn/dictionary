@@ -24,3 +24,22 @@ class Word(models.Model):
     class Meta:
         ordering = ['timestamp']
 
+
+class Language(models.Model):
+    name = models.CharField(max_length=200, blank=True, null=True)
+    # data = JSONField(default=dict, blank=True)
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return u"Id = {0} Language name = {1}".format(self.pk, self.name)
+
+    def json(self):
+        return {
+            "id": self.pk,
+            "name": self.name,
+            "timestamp": dt_to_timestamp(self.timestamp),
+        }
+
+    class Meta:
+        ordering = ['timestamp']
+
