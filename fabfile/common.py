@@ -35,6 +35,9 @@ def update():
     """
     run("pwd")
     run("cd /home/development/dictionary/ && . ./run.sh")
+    run("pwd")
+    run("which python")
+
     sudo("systemctl restart gunicorn")
     sudo("systemctl restart nginx")
     update_supervisor()
