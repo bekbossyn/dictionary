@@ -38,7 +38,7 @@ class Language(models.Model):
         return {
             "id": self.pk,
             "code_name": self.code_name,
-            "display": self.display_name,
+            "display_name": self.display_name,
             "timestamp": dt_to_timestamp(self.timestamp),
         }
 
