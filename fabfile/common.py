@@ -34,8 +34,12 @@ def update():
     Restarts the server
     """
     run("pwd")
-    run("cd /home/development/dictionary/ && . ./run.sh")
+    # run("cd /home/development/dictionary/ && . ./run.sh")
     run("pwd")
+    run("source /home/development/env_dictionary/bin/activate")
+    run("cd /home/development/dictionary && pip install -r requirements")
+    run("python ocean.py collectstatic --noinput")
+    run("python ocean.py migrate --noinput")
     run("which python")
 
     sudo("systemctl restart gunicorn")
