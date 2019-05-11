@@ -7,7 +7,7 @@ from utilities.time_utilities import dt_to_timestamp
 # Create your models here.
 class Word(models.Model):
     word = models.CharField(max_length=200, blank=True, null=True)
-    data = JSONField(default={}, blank=True)
+    data = JSONField(default=dict, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
