@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.core.exceptions import ObjectDoesNotExist
 
-from .models import Word
+from .models import Word, Language
 from utilities import http, result_codes, messages
 
 
@@ -21,4 +21,14 @@ def test_show_word(request):
     return {
         'word': word.json(),
     }
+
+
+@http.json_response()
+def languages(request):
+    langs = Language.objects.all()
+    return {
+        'languages': [language.json() for language in langs],
+    }
+
+
 
