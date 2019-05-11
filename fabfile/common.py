@@ -34,8 +34,8 @@ def update():
     Restarts the server
     """
     run("pwd")
-    # run("cd /home/development/dictionary/ && . ./run.sh")
-    run("source /home/development/env_dictionary/bin/activate")
+    run("cd /home/development/dictionary/ && . ./run.sh")
+    # run("source /home/development/env_dictionary/bin/activate")
     run("which python")
     run("cd /home/development/dictionary && pip install -r requirements.txt")
     run("pwd")
