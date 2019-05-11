@@ -12,6 +12,8 @@ class WordAdmin(admin.ModelAdmin):
 
 @admin.register(Language)
 class LanguageAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'timestamp',)
+    list_display = ('id', 'code_name', 'display_name', 'timestamp',)
+
+    search_fields = ('code_name', 'display_name',)
 
     ordering = ('-timestamp',)

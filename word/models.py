@@ -26,17 +26,19 @@ class Word(models.Model):
 
 
 class Language(models.Model):
-    name = models.CharField(max_length=200, blank=True, null=True)
+    code_name = models.CharField(max_length=20, blank=True, null=True)
+    display_name = models.CharField(max_length=20, blank=True, null=True)
     # data = JSONField(default=dict, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return u"Id = {0} Language name = {1}".format(self.pk, self.name)
+        return u"Id = {0} Language display name = {1}".format(self.pk, self.display_name)
 
     def json(self):
         return {
             "id": self.pk,
-            "name": self.name,
+            "code_name": self.code_name,
+            "display": self.display_name,
             "timestamp": dt_to_timestamp(self.timestamp),
         }
 
