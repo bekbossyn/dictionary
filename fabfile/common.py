@@ -35,6 +35,8 @@ def update():
     """
     run("cd /home/development/dictionary/ && . ./run.sh")
     run("source /home/development/env_dictionary/bin/activate")
+    run("cd /home/development/dictionary/")
+    run("python ocean.py migrate --noinput")
     sudo("systemctl restart gunicorn")
     sudo("systemctl restart nginx")
     update_supervisor()
