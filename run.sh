@@ -1,4 +1,4 @@
-#!usr/bin/env bash
+#!usr/bin/env 
 source '../home/development/env_dictionary/bin/activate'
 which python
 pwd
