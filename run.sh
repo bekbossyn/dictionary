@@ -1,4 +1,4 @@
-#!/usr/bin/env bash \n
+#!/bin/env bash
 source '/home/development/env_dictionary/bin/activate'
 pip install -r requirements.txt
 python ocean.py collectstatic --noinput
